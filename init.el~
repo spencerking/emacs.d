@@ -40,7 +40,7 @@ There are two things you can do about this warning:
             (tool-bar-lines . 0)
             (width . 106)
             (height . 60)
-            (background-color . "#eeeeee")
+            (background-color . "honeydew")
             (left . 50)
             (top . 50)))
   (setq initial-frame-alist '( (tool-bar-lines . 0))))
