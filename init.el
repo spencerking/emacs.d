@@ -24,7 +24,7 @@ There are two things you can do about this warning:
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (org rust-mode magit ivy dumb-jump company php-mode rainbow-delimiters exec-path-from-shell rg))))
+    (company-lsp lsp-ui lsp-mode org rust-mode magit ivy dumb-jump company php-mode rainbow-delimiters exec-path-from-shell rg))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -84,3 +84,6 @@ There are two things you can do about this warning:
 
 ; magit
 (global-set-key (kbd "C-x g") 'magit-status)
+
+; lsp-mode
+(add-hook 'prog-mode-hook #'lsp)
