@@ -87,3 +87,6 @@ There are two things you can do about this warning:
 
 ; lsp-mode
 (add-hook 'prog-mode-hook #'lsp)
+
+; org-mode
+(load "~/custom/org.el")
