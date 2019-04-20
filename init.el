@@ -89,4 +89,4 @@ There are two things you can do about this warning:
 (add-hook 'prog-mode-hook #'lsp)
 
 ; org-mode
-(load "~/custom/org.el")
+(load "~/.emacs.d/custom/org.el")
