@@ -87,6 +87,8 @@ There are two things you can do about this warning:
 
 ; lsp-mode
 (add-hook 'prog-mode-hook #'lsp)
+(load "~/.emacs.d/custom/lsp.el")
+(global-set-key [f1] 'do-open-def-in-new-window)
 
 ; org-mode
 (load "~/.emacs.d/custom/org.el")
