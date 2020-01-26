@@ -26,4 +26,23 @@ There are two things you can do about this warning:
   (add-to-list 'load-path "<path where use-package is installed>")
   (require 'use-package))
 
+;; auctex
+(use-package tex
+  :ensure auctex)
 
+;; magit
+(use-package magit
+  :ensure t)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (auctex use-package magit))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
