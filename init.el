@@ -30,6 +30,10 @@ There are two things you can do about this warning:
 (use-package tex
   :ensure auctex)
 
+;; latex-preview-pane
+(use-package latex-preview-pane
+  :ensure t)
+
 ;; magit
 (use-package magit
   :ensure t)
