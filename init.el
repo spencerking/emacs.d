@@ -30,6 +30,18 @@ There are two things you can do about this warning:
 (use-package tex
   :ensure auctex)
 
+;; company
+(use-package company               
+  :ensure t
+  :defer t
+  :init (global-company-mode)
+  :config
+  (progn
+    (setq company-dabbrev-downcase 0)
+    (setq company-idle-delay 0)
+    )
+  )
+
 ;; latex-preview-pane
 (use-package latex-preview-pane
   :ensure t)
