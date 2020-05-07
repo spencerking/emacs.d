@@ -50,6 +50,12 @@ There are two things you can do about this warning:
 (use-package magit
   :ensure t)
 
+;; markdown
+(use-package markdown-mode
+  :ensure t)
+
+(setq markdown-command "/usr/local/bin/markdown")
+
 ;; org
 (use-package org
   :ensure t)
