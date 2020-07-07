@@ -60,6 +60,22 @@ There are two things you can do about this warning:
 (use-package org
   :ensure t)
 
+;; org-roam
+(use-package org-roam
+      :ensure t
+      :hook
+      (after-init . org-roam-mode)
+      :custom
+      (org-roam-directory "~/notes/")
+      :bind (:map org-roam-mode-map
+              (("C-c n l" . org-roam)
+               ("C-c n f" . org-roam-find-file)
+               ("C-c n g" . org-roam-graph-show))
+              :map org-mode-map
+              (("C-c n i" . org-roam-insert))
+              (("C-c n I" . org-roam-insert-immediate))))
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
